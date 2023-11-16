@@ -4,6 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: './', // Ajusta la ruta base según sea necesario
   plugins: [checker({ typescript: true, overlay: false }), react()],
   build: {
     modulePreload: {
